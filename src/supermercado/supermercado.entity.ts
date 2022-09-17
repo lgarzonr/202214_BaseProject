@@ -9,10 +9,10 @@ export class SupermercadoEntity {
   @Column()
   nombre: string;
 
-  @Column()
+  @Column({ type: 'float' })
   longitud: number;
 
-  @Column()
+  @Column({ type: 'float' })
   latitud: number;
 
   @Column()

@@ -12,7 +12,7 @@ export class CiudadEntity {
   @Column()
   pais: string;
 
-  @Column()
+  @Column({ type: 'bigint' })
   habitantes: number;
 
   @OneToMany(() => SupermercadoEntity, (supermercado) => supermercado.ciudad)
